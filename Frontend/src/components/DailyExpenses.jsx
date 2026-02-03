@@ -149,7 +149,7 @@ export default function DailyExpenses() {
             )}
 
             <div className="expenses-summary">
-                <h3>Total Expenses: ${totalAmount.toFixed(2)}</h3>
+                <h3>Total Expenses: ₹{totalAmount.toFixed(2)}</h3>
             </div>
 
             {loading ? (
@@ -171,7 +171,7 @@ export default function DailyExpenses() {
                                 </p>
                             </div>
                             <div className="expense-amount">
-                                <span className="amount">${expense.amount.toFixed(2)}</span>
+                                <span className="amount">₹{expense.amount.toFixed(2)}</span>
                             </div>
                             <div className="expense-actions">
                                 <button 
@@ -194,4 +194,5 @@ export default function DailyExpenses() {
         </div>
     );
 }
+
 
